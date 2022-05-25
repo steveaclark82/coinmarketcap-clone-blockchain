@@ -57,7 +57,7 @@ const Header = () => {
             <div className='flex items-center'>
                 {/* <ConnectButton/> */}
                 <div className={styles.inputContainer}>
-                    {/* <Search /> */}
+                    {<Search />}
                     <input className={styles.input} placeHolder = 'Search'/>
                 </div>
             </div>
