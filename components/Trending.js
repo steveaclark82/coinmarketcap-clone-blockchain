@@ -4,10 +4,15 @@ import btc from '../assets/btc.png'
 import usdt from '../assets/usdt.png'
 import gainers from '../assets/gainers.png'
 import recent from '../assets/recent.png'
+import ReactSwitch from 'react-switch'
 
-export const Trending = () => {
+const Trending = () => {
+    const [checked, setChecked] = useState(false)
+
   return (
-    <div>Trending</div>
+    <div>
+
+    </div>
   )
 }
 
