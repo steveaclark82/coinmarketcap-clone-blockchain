@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import Search from '../assets/svg/search'
 const styles = {
     header: `bg-[#17171A] text-white h-20 flex gap-[100px] w-full p-[30px]`,
     headerWrapper: `flex justify-center h-full max-w-screen-xl mx-auto px-4`,
