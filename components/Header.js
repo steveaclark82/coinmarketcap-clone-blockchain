@@ -9,6 +9,7 @@ const styles = {
     headerWrapper: `flex justify-center h-full max-w-screen-xl mx-auto px-4`,
     nav: `flex justify-center items-center gap-[20px]`,
     navItem: `relative mr-1 cursor-pointer hover:opacity-60`,
+    navLink: `text-white mx-[10px]`,
     badge: `rounded-full bg-blue-600 h-1 w-1 absolute bottom-5 right-0 top-1 ring-4`,
     inputContainer: `flex item-center justify-center p-2 rounded bg-[#171924]`,
     input: `bg-transparent outline-none text-white w-70 mL-3`,
