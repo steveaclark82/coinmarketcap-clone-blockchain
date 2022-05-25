@@ -5,10 +5,12 @@ import usdt from '../assets/usdt.png'
 import gainers from '../assets/gainers.png'
 import recent from '../assets/recent.png'
 import ReactSwitch from 'react-switch'
+import Rate from './cmc-table/Rate'
 
 const styles = {
     trendingWrapper: `mx-auto-w-screen-2xl`,
-    h1: 'text-3xl text-white'
+    h1: 'text-3xl text-white',
+    flexCenter: 'flex items-center'
 }
 
 const Trending = () => {
@@ -28,9 +30,20 @@ const Trending = () => {
             <br/>
             <div className='flex'>
                 <p className='text-gray-400'>The global crypto market cap is $1.74T, &nbsp;</p>
-                <span>
-                    {/* <rate /> */}
-                </span>
+                <span><Rate isIncrement={true} rate ='0.53%' /></span>
+                <p> &nbsp; decrease over the last day. <span className='underline'>Read More</span></p>
+            </div>
+            <br/>
+
+            <div className={styles.flexCenter}>
+                {/*
+                <TrendingCard title ='Trending' icon={fire}
+                trendingData = {trendingData}/>
+                <TrendingCard title ='Biggest Gainers' icon={gainers}
+                trendingData = {trendingData}/>
+                <TrendingCard title ='Recently Added' icon={recent}
+                trendingData = {trendingData}/>
+                */}
             </div>
         </div>
     </div>
