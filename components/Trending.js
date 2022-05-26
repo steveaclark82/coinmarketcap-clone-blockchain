@@ -13,6 +13,33 @@ const styles = {
     flexCenter: 'flex items-center'
 }
 
+const trendingData = [
+    {
+        number:1,
+        symbol: "BTC",
+        name: "Bitcoin",
+        icon: btc,
+        isIncrement: true,
+        rate: "2.34%"
+    },
+    {
+        number:2,
+        symbol: "USDT",
+        name: "Tether",
+        icon: usdt,
+        isIncrement: false,
+        rate: "9.23%"
+    },
+    {
+        number:3,
+        symbol: "BTC",
+        name: "Bitcoin",
+        icon: btc,
+        isIncrement: true,
+        rate: "2.34%"
+    }
+]
+
 const Trending = () => {
     const [checked, setChecked] = useState(false)
 
