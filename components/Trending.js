@@ -6,6 +6,7 @@ import gainers from '../assets/gainers.png'
 import recent from '../assets/recent.png'
 import ReactSwitch from 'react-switch'
 import Rate from './cmc-table/Rate'
+import TrendingCard from './TrendingCard'
 
 const styles = {
     trendingWrapper: `mx-auto-w-screen-2xl`,
@@ -63,14 +64,12 @@ const Trending = () => {
             <br/>
 
             <div className={styles.flexCenter}>
-                {/*
-                <TrendingCard title ='Trending' icon={fire}
-                trendingData = {trendingData}/>
-                <TrendingCard title ='Biggest Gainers' icon={gainers}
-                trendingData = {trendingData}/>
-                <TrendingCard title ='Recently Added' icon={recent}
-                trendingData = {trendingData}/>
-                */}
+                {
+                <><TrendingCard title='Trending' icon={fire}
+                          trendingData={trendingData} /><TrendingCard title='Biggest Gainers' icon={gainers}
+                              trendingData={trendingData} /><TrendingCard title='Recently Added' icon={recent}
+                                  trendingData={trendingData} /></>
+                }
             </div>
         </div>
     </div>
