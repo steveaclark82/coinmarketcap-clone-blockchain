@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import MoreButton from './MoreButton'
+import TrendingCardRow from './TrendingCardRow'
 
 const styles = {
     trendingCard: `w-full p-5 py-3 pb-0 bg-[#323546] rounded-xl text-white mr-3`,
@@ -21,17 +22,17 @@ const TrendingCard = ({title, icon, trendingData}) => {
         <br />
         
         {trendingData.map((item, index)=> {
-            // return (
-            //      <TrendingCardRow
-            //      key={index}
-            //      number={item.number}
-            //      symbol={item.symbol}
-            //      name={item.name}
-            //      icon={item.icon}
-            //      isIncrement={item.isIncrement}
-            //      rate={item.rate}
-            //      />
-            // )
+            return (
+                 <TrendingCardRow
+                 key={index}
+                 number={item.number}
+                 symbol={item.symbol}
+                 name={item.name}
+                 icon={item.icon}
+                 isIncrement={item.isIncrement}
+                 rate={item.rate}
+                 />
+            )
         })}
     </div>
   )
