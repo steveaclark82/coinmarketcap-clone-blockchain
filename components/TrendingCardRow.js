@@ -6,7 +6,7 @@ const styles = {
     trendingCardRow: `flex items-center justify-between mb-4 text-[0.93rem]`,
 }
 
-const TrendingCardRow = () => {
+const TrendingCardRow = ({number, icon, name, isIncrement, rate}) => {
   return (
     <div>TrendingCardRow</div>
   )
