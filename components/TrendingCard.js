@@ -16,7 +16,7 @@ const TrendingCard = ({title, icon, trendingData}) => {
                 &nbsp;&nbsp;
                 <p className='font-bold'>{title}</p>
             </div>
-            { <MoreButton/> }
+            <MoreButton/>
         </div>
         <br />
         
